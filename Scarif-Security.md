@@ -4,7 +4,7 @@
 
 **Windows Server əsaslı korporativ şəbəkə infrastrukturunun tətbiqi**
 
-<img width="1149" height="488" alt="image" src="https://github.com/user-attachments/assets/0ee047e6-288c-45fb-b6bb-f65117a6ad21" />
+![image](https://github.com/user-attachments/assets/0ee047e6-288c-45fb-b6bb-f65117a6ad21)
 
 
 - **Hazırlayan:** Melisa Hacızadə
