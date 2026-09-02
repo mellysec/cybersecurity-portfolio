@@ -36,7 +36,9 @@
 # 2. Organizational Unit (OU) Strukturu
 
 2.1 Mövcud OU strukturu
+
 2.2 OU-ların PowerShell vasitəsilə yoxlanılması
+
 2.3 Strukturun praktiki istifadəsi
 
 # 3. İstifadəçilərin CSV vasitəsilə avtomatik yaradılması
