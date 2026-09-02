@@ -4,6 +4,9 @@
 
 **Windows Server əsaslı korporativ şəbəkə infrastrukturunun tətbiqi**
 
+<img width="1149" height="488" alt="image" src="https://github.com/user-attachments/assets/0ee047e6-288c-45fb-b6bb-f65117a6ad21" />
+
+
 - **Hazırlayan:** Melisa Hacızadə
 - **Təşkilat:** Scarif Security
 - **Layihə mühiti:** Windows Server əsaslı korporativ laboratoriya infrastrukturu
@@ -24,13 +27,21 @@
 # 1. Active Directory Domen İnfrastrukturunun Qurulması
 
 1.1 Bölmənin məqsədi
+
 1.2 Şəbəkə və sistemin ilkin konfiqurasiyası
+
 1.3 Active Directory Domain Services rolunun quraşdırılması
+
 1.4 Domenin yaradılması
+
 1.4.1 Domen məlumatlarının yoxlanılması
+
 1.4.2 Forest strukturunun yoxlanılması
+
 1.4.3 Domain Controller rolunun təsdiqi
+
 1.4.4 SYSVOL və NETLOGON paylaşımlarının yoxlanılması
+
 1.4.5 Ümumi sağlamlıq testi
 
 # 2. Organizational Unit (OU) Strukturu
@@ -44,56 +55,88 @@
 # 3. İstifadəçilərin CSV vasitəsilə avtomatik yaradılması
 
 3.1 İstifadə olunan məlumat mənbəyi
+
 3.2 PowerShell skriptinin işləmə prinsipi
+
 3.3 İstifadə olunan skript
+
 3.4 Yaradılma nəticəsi
+
 3.5 Yaradılan istifadəçilərin yoxlanılması
+
 3.6 Parol siyasətinin yoxlanılması
+
 
 # 4. Security Group strukturu və RBAC modeli
 
 4.1 Department əsaslı Security Group-ların yaradılması
+
 4.2 İstifadəçilərin avtomatik olaraq qruplara əlavə edilməsi
+
 4.3 Qrup üzvlüyünün yoxlanılması
+
 4.4 RBAC modelinin məntiqi quruluşu
+
 4.5 İstifadəçi səviyyəsində qrup üzvlüyünün yoxlanılması
+
 4.6 Nəticə
 
 # 5. File Server Strukturunun Yoxlanılması və İcazə Modeli
 
 5.1 Qovluq strukturunun yoxlanılması
+
 5.2 SMB Share-lərin yoxlanılması
+
 5.3 Share səviyyəsində icazələrin yoxlanılması
+
 5.4 NTFS icazələrinin yoxlanılması
+
 5.5 İstifadəçi qrup üzvlüyünün yoxlanılması
 
 # 6. File Server Access Testləri
 
 6.1 IT qovluğuna giriş
+
 6.2 Digər departament qovluğuna giriş
+
 6.3 Nəticə
 
 # 7. Group Policy Object (GPO) Konfiqurasiyası
 
 7.1 Domen daxilində mövcud GPO-ların siyahısı
+
 7.2 HR departamenti üçün tətbiq olunan siyasətlər
+
 7.3 Finance departamenti üçün tətbiq olunan siyasətlər
+
 7.4 IT departamenti üçün tətbiq olunan siyasətlər
+
 7.5 Digər departamentlər üçün standart GPO
+
 7.6 Default Domain Policy üzərində edilmiş dəyişikliklər
+
 7.7 Domain Wallpaper GPO
+
 7.8 GPO strukturunun dizayn prinsipi
+
 7.9 GPO siyasətlərinin client sistem üzərində test edilməsi
 
 # 8. IIS Server və Web Portalın Qurulması
 
 8.1 IIS Web Server rolunun quraşdırılması
+
 8.2 IIS saytlarının konfiqurasiyası
+
 8.3 Portalın fiziki fayl strukturu
+
 8.4 HTTPS binding konfiqurasiyası
+
 8.5 SSL sertifikatının tətbiqi
+
 8.6 Authentication konfiqurasiyası
+
 8.7 IIS xidmətinin statusu
+
 8.8 Portalın test edilməsi və təhlükəsizlik analizi
 
 # 9. Nəticə
@@ -152,6 +195,9 @@ IP konfiqurasiyasının yoxlanılması:
 
 Get-NetIPAddress -AddressFamily IPv4
 
+<img width="1106" height="345" alt="image" src="https://github.com/user-attachments/assets/c52ea8f4-25df-49f8-b322-f398ad61a9f8" />
+
+
 ## 1.3 Active Directory Domain Services rolunun quraşdırılması
 
 Active Directory Domain Services (AD DS) rolu aşağıdakı əmrlə quraşdırılmışdır:
@@ -166,6 +212,9 @@ Active Directory servisləri sistemə əlavə edilmişdir
 
 DNS idarəetmə modulları quraşdırılmışdır
 
+<img width="1106" height="119" alt="image" src="https://github.com/user-attachments/assets/bb247abd-6c1b-420a-b4e2-203a14627be2" />
+
+
 ## 1.4 Domenin yaradılması
 
 Layihə mühitində Active Directory Domain Services (AD DS) artıq qurulmuş vəziyyətdə olmuşdur. Bu bölmədə domen strukturunun düzgün və funksional vəziyyətdə olduğunu təsdiq etmək məqsədilə sistem səviyyəsində texniki yoxlamalar aparılmışdır.
@@ -175,6 +224,8 @@ Layihə mühitində Active Directory Domain Services (AD DS) artıq qurulmuş v�
 Active Directory domen obyektinin mövcudluğu və struktur parametrləri aşağıdakı əmr vasitəsilə analiz edilmişdir:
 
 Get-ADDomain
+
+<img width="1107" height="717" alt="image" src="https://github.com/user-attachments/assets/c667b1e5-2552-45c1-9c6f-1b5e24d94191" />
 
 Yoxlama nəticəsində:
 
